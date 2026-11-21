@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.faq-question').forEach(q=>{q.setAttribute('aria-expanded','false');q.addEventListener('click',()=>{const item=q.closest('.faq-item');const open=item.classList.toggle('open');q.setAttribute('aria-expanded',String(open));});});});
